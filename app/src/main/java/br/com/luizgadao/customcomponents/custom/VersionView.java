@@ -1,4 +1,4 @@
-package br.com.luizgadao.customcomponents;
+package br.com.luizgadao.customcomponents.custom;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
