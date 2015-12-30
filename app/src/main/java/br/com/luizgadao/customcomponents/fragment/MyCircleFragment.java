@@ -9,21 +9,21 @@ import android.view.ViewGroup;
 
 import br.com.luizgadao.customcomponents.R;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PizzaFragment extends Fragment {
+public class MyCircleFragment extends Fragment {
 
 
-    public PizzaFragment() {
+    public MyCircleFragment() {
         // Required empty public constructor
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_pizza, container, false);
+        return inflater.inflate(R.layout.fragment_my_circle, container, false);
     }
 }

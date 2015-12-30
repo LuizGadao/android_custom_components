@@ -69,6 +69,6 @@ public class Pizza extends View {
             canvas.drawLine(cx, cy, cx, cy - radius, paint);
             canvas.rotate(degrees, cx, cy);
         }
-        //canvas.restore();
+        canvas.restore();
     }
 }
