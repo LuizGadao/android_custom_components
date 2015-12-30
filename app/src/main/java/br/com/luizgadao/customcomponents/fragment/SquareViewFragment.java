@@ -1,20 +1,21 @@
-package br.com.luizgadao.customcomponents;
+package br.com.luizgadao.customcomponents.fragment;
 
 
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import br.com.luizgadao.customcomponents.R;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PhotoSpiralFragment extends Fragment {
+public class SquareViewFragment extends Fragment {
 
 
-    public PhotoSpiralFragment() {
+    public SquareViewFragment() {
         // Required empty public constructor
     }
 
@@ -22,9 +23,6 @@ public class PhotoSpiralFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_photo_espiral, container, false);
+        return inflater.inflate(R.layout.fragment_square_view, container, false);
     }
-
-
 }

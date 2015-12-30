@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import br.com.luizgadao.customcomponents.fragment.MainActivityFragment;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -24,5 +26,14 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        fab.setVisibility(View.GONE);
+
+        if (savedInstanceState == null){
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .add(R.id.fragment, new MainActivityFragment(), "content")
+                    .commit();
+        }
     }
 }

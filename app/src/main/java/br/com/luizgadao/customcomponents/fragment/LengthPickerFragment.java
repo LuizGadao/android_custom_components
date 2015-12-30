@@ -1,13 +1,14 @@
-package br.com.luizgadao.customcomponents;
+package br.com.luizgadao.customcomponents.fragment;
 
 
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import br.com.luizgadao.customcomponents.R;
 import br.com.luizgadao.customcomponents.custom.LengthPicker;
 
 
@@ -28,16 +29,15 @@ public class LengthPickerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        LengthPicker lengthPicker = (LengthPicker) inflater.inflate(R.layout.fragment_length_picker, container, false);
+        View v = inflater.inflate(R.layout.fragment_length_picker, container, false);
+        LengthPicker lengthPicker = (LengthPicker) v.findViewById(R.id.length_picker);
         lengthPicker.setOnChangeListener(new LengthPicker.OnChangeListerner() {
             @Override
             public void onChange(int length) {
                 Log.i(TAG, "picker-change: " + length);
             }
         });
-
-
-        return lengthPicker;
+        return v;
     }
 
 
