@@ -1,13 +1,11 @@
-package br.com.luizgadao.customcomponents.custom;
+package br.com.luizgadao.customcomponents;
 
 
-import android.os.Bundle;
 import android.app.Fragment;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import br.com.luizgadao.customcomponents.R;
 
 /**
  * A simple {@link Fragment} subclass.
